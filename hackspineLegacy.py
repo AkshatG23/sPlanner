@@ -20,7 +20,7 @@ def inputDate():
 
     if (not success):
         while (not success):
-            year = input("\033[38;5;226mPlease enter a number for the year in (yy) format: \033[38;5;015m")
+            year = input("\033[38;5;226mPlease enter a number for the year in (yy) format: \033[38;5;197m")
             try:
                 inputLength = len(year)
                 year = int(year)
@@ -38,7 +38,7 @@ def inputDate():
 
     if (not success):
         while (not success):
-            month = input("\033[38;5;226mPlease enter a number from 01–12 for the month in (mm) format: \033[38;5;015m")
+            month = input("\033[38;5;226mPlease enter a number from 01–12 for the month in (mm) format: \033[38;5;197m")
             try:
                 inputLength = len(month)
                 month = int(month)
@@ -61,7 +61,7 @@ def inputDate():
 
     if (not success):
         while (not success):
-            day = input("\033[38;5;226mPlease enter a number from for the day in (dd) format: \033[38;5;015m")
+            day = input("\033[38;5;226mPlease enter a number from for the day in (dd) format: \033[38;5;197m")
             try:
                 inputLength = len(day)
                 day = int(day)
@@ -91,7 +91,7 @@ def newTask():
 
     if (not success):
         while (not success):
-            priority = input("\033[38;5;226mPlease enter a number from 1–10 for the priority of the task: \033[38;5;015m")
+            priority = input("\033[38;5;226mPlease enter a number from 1–10 for the priority of the task: \033[38;5;197m")
             try:
                 priority = int(priority)
                 success = 0 < int(priority) < 11
@@ -107,7 +107,7 @@ def newTask():
 
     if (not success):
         while (not success):
-            effort = input("\033[38;5;226mPlease enter a number from 1–10 for the expected amount of effort the task will require: \033[38;5;015m")
+            effort = input("\033[38;5;226mPlease enter a number from 1–10 for the expected amount of effort the task will require: \033[38;5;197m")
             try:
                 effort = int(effort)
                 success = 0 < int(effort) < 11
@@ -211,7 +211,7 @@ def taskPercentPerDay(inputTask):
         while (not success):
             # print(str(len(calendar)))
             # print(calendar)
-            dayWanted = input("\033[38;5;226mThat day doesn't exist. What day do you want to view? 0 is today, 1 is tomorrow, etc. \033[38;5;015m")
+            dayWanted = input("\033[38;5;226mThat day doesn't exist. What day do you want to view? 0 is today, 1 is tomorrow, etc. \033[38;5;197m")
             try:
                 dayWanted = int(dayWanted)
                 success = dayWanted < len(calendar)
@@ -242,7 +242,7 @@ def workPerDay():
         success = False
     if (not success):
         while (not success):
-            dayWanted = input("\033[38;5;226mInvalid input. What day do you want to view? 0 is today, 1 is tomorrow, etc.\033[38;5;015m")
+            dayWanted = input("\033[38;5;226mInvalid input. What day do you want to view? 0 is today, 1 is tomorrow, etc.\033[38;5;197m")
             try:
                 dayWanted = int(dayWanted)
                 success = dayWanted < len(taskCalendar)
@@ -270,7 +270,7 @@ while True:
             success = False
         while not success:
             try:
-                setup[1] = int(input("\033[38;5;226mNumber of hours you can spend on this project: \033[38;5;015m"))
+                setup[1] = int(input("\033[38;5;226mNumber of hours you can spend on this project: \033[38;5;197m"))
                 success = True
             except:
                 success = False
@@ -296,7 +296,7 @@ while True:
             success = False
         while not success:
             try:
-                progress = int(input("\033[38;5;226mInvalid input. How much progress have you gotten so far on your goals for today so far? Only enter a number: \033[38;5;015m"))
+                progress = int(input("\033[38;5;226mInvalid input. How much progress have you gotten so far on your goals for today so far? Only enter a number: \033[38;5;197m"))
                 success = True
             except:
                 success = False
